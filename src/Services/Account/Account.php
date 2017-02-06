@@ -35,9 +35,9 @@ class Account extends RestService implements ServiceInterface
      *
      * @return array
      */
-    public function all()
+    public function all($limit = 1000)
     {
-        $result = $this->get('accounts');
+        $result = $this->get('accounts?pageSize=' . $limit);
 
         if (! $this->exists($result)) {
             return false;
