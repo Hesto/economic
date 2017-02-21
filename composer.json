@@ -6,13 +6,13 @@
     "authors": [
         {
             "name": "Andrzej Żmudziński",
-            "email": "endi2801@gmail.com"
+            "email": "jendrusha@gmail.com"
         }
     ],
     "require": {
         "php": ">=5.5.9",
         "guzzlehttp/guzzle": "~6.0",
-        "illuminate/support": "5.1.x|5.2.x|5.3.*"
+        "illuminate/support": "5.1 - 5.4"
     },
     "autoload": {
         "psr-4": {
