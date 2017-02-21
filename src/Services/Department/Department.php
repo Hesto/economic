@@ -34,11 +34,13 @@ class Department extends RestService implements ServiceInterface
     }
 
     /**
+     * @param int $limit
+     *
      * @return bool|mixed
      */
-    public function all()
+    public function all($limit = 1000)
     {
-        $result = $this->get('departments');
+        $result = $this->get('departments?pageSize=' . $limit);
 
         if (! $this->exists($result)) {
             return false;
