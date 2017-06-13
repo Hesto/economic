@@ -32,7 +32,7 @@ class Economic implements ClientInterface
      * E-conomics soap API url
      * @var string
      */
-    protected $soapApiUrl = 'https://www.e-conomic.com/secure/api1/EconomicWebservice.asmx?WSDL';
+    protected $soapApiUrl = 'https://api.e-conomic.com/secure/api1/EconomicWebservice.asmx?WSDL';
 
     /**
      * E-conomics rest API url
